@@ -8,8 +8,9 @@ day = 0
 
 while True:
     day = day+1
+    heigh2 = heigh1 + 3
     heigh1 = heigh1 + 3-2
-    heigh2 =heigh1+3
+
 
     if  heigh2 >=heigh:
         print("青蛙第",day,"天能出来")
