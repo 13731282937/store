@@ -94,7 +94,7 @@ while True:
                         if change == 0:
                             coupon1[0][1] = int(coupon1[0][1])
                             if coupon1[0][1] > 0:
-                                mycart.append([shop[num][0],shop[num][0]-300])
+                                mycart.append([shop[num][0],shop[num][1]-300])
                                 shop[num][1] = int(shop[num][1])
                                 salary = salary - (shop[num][1]-300)
                                 coupon1[0][1] = coupon1[0][1]-1
