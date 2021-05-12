@@ -1,6 +1,6 @@
 # 打印欢迎界面
 
-class welcome():
+class Welcome():
     def welcome(self):
         print("----------------------------------------------")
         print("-               JDBC账户管理系统               -")

@@ -1,12 +1,12 @@
 from util.DBUtils import DBUtils
-from util.welcome import welcome
+from util.welcome import Welcome
 from util.User import User
 from util.Address import Address
 from util.Bank import Bank
 from util.HelpUtils import Utils
 
 DB = DBUtils()
-welcome = welcome()
+welcome = Welcome()
 User = User()
 Address = Address()
 Bank = Bank()
