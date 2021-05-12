@@ -1,10 +1,11 @@
-from util.DBUtils import Select
+from util.DBUtils import DBUtils
 from util.welcome import welcome
 from util.User import User
 from util.Address import Address
 from util.Bank import Bank
 from util.HelpUtils import Utils
 
+DB = DBUtils()
 welcome = welcome()
 User = User()
 Address = Address()
@@ -112,7 +113,7 @@ def seek():
         sql = "select * from jdbcbank where account = %s and password = %s"
         param = [User.getAccount(),User.getPassword()]
         # 执行sql
-        data = Select(sql, param)
+        data = DB.Select(sql, param)
         for i in data:
             account = data[0]
             username = data[1]
