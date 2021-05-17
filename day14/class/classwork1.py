@@ -27,9 +27,13 @@ class NewPhone(OldPhone):
     def explain(self):
         print("品牌为："+self.getBrand()  +"的手机很好用...")
 
+class Test(NewPhone):
+    phone = "华为"
 
-newphone = NewPhone()
-newphone.setBrand("小米")
-newphone.call("华为")
-newphone.explain()
+
+
+t= Test()
+t.setBrand(t.phone)
+t.call("小米")
+t.explain()
 

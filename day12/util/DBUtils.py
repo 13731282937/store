@@ -30,7 +30,7 @@ class DBUtils():
         # 提交
         con.commit()
         # 获取数据
-        return cursor.fetchone()
+        return cursor.fetchall()
         # 关闭
         cursor.close()
         con.close()
