@@ -24,20 +24,23 @@ class Timeend(threading.Thread):
             if num == 300:
                 break
 kep = 0
+sum1 = 0
 class Chef(threading.Thread):
     chefer= ""
     def run(self) -> None:
         cook = 0
         global kep
+        global sum1
         while True:
             if kep == 300:
                 time.sleep(3)
             if kep < 300:
                 cook = cook + 1
                 kep = kep + 1
+                sum1 = sum1 + 1
                 print(self.chefer,"做了一个面包")
             if num == 300:
-                print(self.chefer,"做了",cook,"个")
+                print("一共做了",sum1,"个面包")
                 break
 
 
